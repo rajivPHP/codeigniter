@@ -23,12 +23,12 @@ class News extends CI_Controller {
 		$this->load->library( 'SmartGrid/Smartgrid', $config );
 
 		// MySQL Query to get data
-		$sql = "SELECT * FROM news";
+		$sql = "SELECT * FROM album";
 
 		// Column settings
 		$columns = array(
-			"title" => array( "header" => "Title", "type" => "label" ),
-			"slug"  => array( "header" => "Slug", "type" => "label" )
+			"title"  => array( "header" => "Title", "type" => "label" ),
+			"artist" => array( "header" => "Artist", "type" => "label" )
 		);
 
 		// Set the grid
